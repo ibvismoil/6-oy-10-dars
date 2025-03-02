@@ -24,7 +24,7 @@ const Header = () => {
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
           {isAuthenticated && (
             <Link to="/add" className="mr-5 hover:text-gray-900">
-              ➕ Добавить пользователя
+              ➕ Odam qoshish
             </Link>
           )}
           <Link to="/about" className="mr-5 hover:text-gray-900">О нас</Link>
@@ -37,14 +37,14 @@ const Header = () => {
             onClick={handleLogout}
             className="inline-flex items-center bg-red-500 text-white border-0 py-1 px-3 focus:outline-none hover:bg-red-600 rounded text-base mt-4 md:mt-0"
           >
-            🚪 Выйти
+            🚪 Chiqish
           </button>
         ) : (
           <button
             onClick={() => navigate("/login")}
             className="inline-flex items-center bg-green-500 text-white border-0 py-1 px-3 focus:outline-none hover:bg-green-600 rounded text-base mt-4 md:mt-0"
           >
-            🔑 Вход
+            🔑 Kirish
           </button>
         )}
       </div>

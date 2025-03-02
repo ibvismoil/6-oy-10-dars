@@ -25,7 +25,7 @@ const BookList = () => {
 
   return (
     <div className="p-5 bg-gray-100 min-h-screen">
-      <h2 className="text-2xl font-bold text-center mb-5">📚 Список книг</h2>
+      <h2 className="text-2xl font-bold text-center mb-5">Gruh nomi</h2>
       
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {books.map((book) => (
@@ -44,14 +44,14 @@ const BookList = () => {
               <div className="flex justify-between mt-4">
                 <Link to={`/edit/${book.id}`}>
                   <button className="px-4 py-2 bg-yellow-400 text-black font-medium rounded-lg transition hover:bg-yellow-500">
-                    ✏️ Редактировать
+                    ✏️ Redact
                   </button>
                 </Link>
                 <button 
                   className="px-4 py-2 bg-red-500 text-white font-medium rounded-lg transition hover:bg-red-600" 
                   onClick={() => deleteBook(book.id)}
                 >
-                  🗑 Удалить
+                  🗑 Delete
                 </button>
               </div>
             )}
