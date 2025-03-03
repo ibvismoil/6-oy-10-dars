@@ -6,17 +6,16 @@ import EditBook from "./components/EditBook";
 import Login from "./components/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { AuthProvider } from "./context/AuthContext";
-import Header from "./components/Header";
 import "./App.css";
-import Footer from "./components/Footer";
+import NotePege from "./components/NotePege";
 
 const App = () => {
   return (
     <AuthProvider>
       <Router>
-        <Header />
         <div>
           <Routes>
+            <Route path="*" element={<NotePege/>} />
             <Route path="/" element={<BookList />} />
             <Route path="/login" element={<Login />} />
             <Route
@@ -25,7 +24,7 @@ const App = () => {
                 <ProtectedRoute>
                   <AddBook />
                 </ProtectedRoute>
-              }
+                }
             />
             <Route
               path="/edit/:id"

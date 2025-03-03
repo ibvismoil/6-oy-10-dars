@@ -30,26 +30,15 @@ const EditBook = () => {
 
   return (
     <div style={{ textAlign: "center", padding: "20px", backgroundColor: "#f8f9fa", borderRadius: "10px" }}>
-      <h2 style={{ marginBottom: "15px" }}>✏️ Kitobni Tahrirlash</h2>
+      <h2 style={{ marginBottom: "15px" }}>Edit Name</h2>
       <form 
-        style={{ 
-          display: "flex", 
-          flexDirection: "column", 
-          gap: "15px", 
-          alignItems: "center", 
-          padding: "20px", 
-          backgroundColor: "white", 
-          borderRadius: "10px", 
-          boxShadow: "0 2px 5px rgba(0,0,0,0.1)" 
-        }}
-        onSubmit={handleUpdate}
-      >
+        style={{ display: "flex", flexDirection: "column", gap: "15px", alignItems: "center", padding: "20px", backgroundColor: "white", borderRadius: "10px", boxShadow: "0 2px 5px rgba(0,0,0,0.1)"}} onSubmit={handleUpdate}>
         <input type="text" placeholder="Name" value={name} onChange={(e) => setTitle(e.target.value)} required style={{ padding: "10px", borderRadius: "5px", border: "1px solid #ccc" }} />
         <input type="text" placeholder="Surname" value={surname} onChange={(e) => setAuthor(e.target.value)} required style={{ padding: "10px", borderRadius: "5px", border: "1px solid #ccc" }} />
         <input type="number" placeholder="Age" value={age} onChange={(e) => setAge(e.target.value)} required style={{ padding: "10px", borderRadius: "5px", border: "1px solid #ccc" }} />
-        <input type="text" placeholder="Ball" value={ball} onChange={(e) => setBall(e.target.value)} required style={{ padding: "10px", borderRadius: "5px", border: "1px solid #ccc" }} />
+        <input type="number" placeholder="Ball" value={ball} onChange={(e) => setBall(e.target.value)} required style={{ padding: "10px", borderRadius: "5px", border: "1px solid #ccc" }} />
         <input type="date" placeholder="data" value={datalocal} onChange={(e) => setData(e.target.value)} required style={{ padding: "10px", borderRadius: "5px", border: "1px solid #ccc" }} />
-        <button type="submit" style={{ padding: "10px 15px", backgroundColor: "#007bff", color: "white", border: "none", borderRadius: "5px", cursor: "pointer" }}>Yangilash</button>
+        <button type="submit" style={{ padding: "10px 15px", backgroundColor: "#BC8E5BF6", color: "white", border: "none", borderRadius: "5px", cursor: "pointer" }}>Yangilash</button>
       </form>
     </div>
   );
